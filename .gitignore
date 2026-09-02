@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Secrets & personal API credentials — never commit
+.fyers_credentials.json
+*fyers*credential*.json
+
+# Snapshot data
+chain_*.json

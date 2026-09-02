@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "option-chain-live"
+version = "0.1.0"
+description = "Live NSE option chain plugin: pull real-time option chain data (LTP, OI, IV, Greeks) for NIFTY/BANKNIFTY/FINNIFTY and F&O stocks without any API key or brokerage login."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "dsh workspace" }]
+dependencies = ["requests>=2.25"]
+
+[project.scripts]
+option-chain = "option_chain_live.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["option_chain_live*"]
